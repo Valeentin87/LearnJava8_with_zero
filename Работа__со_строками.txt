@@ -37,3 +37,31 @@ sb.append(" my"); //позволяет дописать в объект знач
 sb.append(" friend");
 sb.append(" my").append(" my friend"); // эквивалент двум предыдущим строчкам
 System.out.println(sb.toString());
+11. char symbol = str4.charAt(0); //возвращает символ по указанному номеру из строки
+12. int unicode_number = str4.codePointAt(1);//возвращает порядковый номер в таблице Unicode
+13. String s1 = new String("Java");
+    String s2 = "JAVA";
+    int result = s1.compareTo(s2); //сравнивает две строки и возвращает 0 если они одинаковые, либо возвращает
+                                   // разницу в символах в виде целого числа, при сравнении учитывается регистр букв
+14. int result1 = s1.compareToIgnoreCase(s2);// сравнивает две строки независимо от регистров букв
+15. String result2 = s1.concat(s2); // конкатенация строк, эквивалент s1 + s2
+    System.out.println(result2);
+16. boolean result3 = s1.equals(s2); //выдает результат сравнения строки с другим объектом (булевое)
+    System.out.println(result3);
+17. boolean result4 = s1.equalsIgnoreCase(s2); // сравгивает строку с другим объектом без учёта регистра
+18. System.out.println(s1.hashCode()); //возвращает хэшкод строки
+19. System.out.println(s1.indexOf(65)); //принимает значение в кодировке unicode символа и если он есть в строке то
+                                        // то выдает номер индекса, по которому он находится
+20. System.out.println(s1.isEmpty()); // если длина строки равна нулю то выдает true, если нет то false
+21. int result5 = s1.length(); // возвращает длину строки - количество символов в строке, учитывая пробелы
+22. String[] strings = s1.split("v");//разбивает строку на массив строк по определенному разделителю
+23. String value3 = "Hello World";
+    System.out.println(value3.substring(2,7));//возвращает строку со 2 по 7 не включительно символ
+24.char[] chars1 = value3.toCharArray(); //преобразует строку в массив символов
+   for (char element:chars1) {
+   System.out.println(element);
+   }
+25.s1 = s1.toUpperCase();//приводит к верхнему регистру
+   s2 = s1.toLowerCase();//приводит к нижнему регистру
+   String result6 = value3.trim(); // обрезает пробелы в начале и в конце строки
+26. String result7 = String.valueOf(65); // приведение к строке целочисленного значения;
